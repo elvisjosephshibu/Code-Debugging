@@ -1,12 +1,12 @@
 
 #include <iostream>
-#include <stirng.h>
+#include <string.h> //wrong library
 int main()
 {
 	char str[100];
 	char ch; 
 	int Lindex,Findex; 
-	cin>>str
+	cin>>str; //No ;
 	cin>>ch;
 	Lindex = getLIndex(str,ch);
 	Findex= getFIndex(str,ch);
@@ -22,7 +22,7 @@ int getLIndex(char string,char  c)
 	while(i<size)
 	{
 		
-		if(string[i]=c){
+		if(string[i]==c){  //inequlity
 		    return i;
 		   break;
 		}	
@@ -30,7 +30,7 @@ int getLIndex(char string,char  c)
 	}
 	
 }
-int getFindex(string, c)
+int getFIndex(char string,char c)//data type of parameters and error in function name
 {
 	int size = len(string);
 	int i=size; 
