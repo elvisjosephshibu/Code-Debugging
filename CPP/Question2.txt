@@ -1,14 +1,15 @@
 
 #include<iostream>
 using namespace std;
+#include<math.h>
 int main(){
 int num,d=0,n,r,p=0,a=1;
 char choice;
-cin<<num;
-cin<<choice;
-swithc(choice)
+cin>>num;// No ;
+cin>>choice;//Syntax error
+switch(choice)//spelling mistake
 {
-case a 
+case 'a':// no colon
 n=num;
 while(n==0)
 {
@@ -19,20 +20,22 @@ n=num;
 while(n!=0)
 {
 r=n%10;
-a==a*sqr(r,d);
+a=a*pow(r,d);//inequality
 n=n/10;
 }
-cout<<a<<"\n";  
-case p 
+cout<<a<<"\n";
+break;
+case 'p':// no colon
 n=num;
 while(n!=0)
 {
 r=n%10;
-p==p+10+r;
+p=p+10+r;//inequality
 n=n/10;
+continue; //was outside te loop
 }
 cout<<p<<"\n";
-continue;
+
 }
 }
 
