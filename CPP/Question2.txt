@@ -1,16 +1,17 @@
 
+
 #include<iostream>
 using namespace std;
 int main(){
 int num,d=0,n,r,p=0,a=1;
 char choice;
-cin<<num;
-cin<<choice;
-swithc(choice)
+cin>>num;
+cin>>choice;//Syntax error
+switch(choice)//spelling mistake
 {
-case a 
+case 'a':// no colon
 n=num;
-while(n==0)
+while(n!=0)//inequality wrong
 {
 n=n/10;
 d++;
@@ -19,16 +20,17 @@ n=num;
 while(n!=0)
 {
 r=n%10;
-a==a*sqr(r,d);
+a=a*sqr(r,d);//inequality
 n=n/10;
 }
-cout<<a<<"\n";  
-case p 
+cout<<a<<"\n";
+break;
+case 'p':// no colon
 n=num;
 while(n!=0)
 {
 r=n%10;
-p==p+10+r;
+p=p+10+r;//inequality
 n=n/10;
 }
 cout<<p<<"\n";
@@ -47,3 +49,4 @@ Sample input-2
 a
 Sample output-2
 216
+
